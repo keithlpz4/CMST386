@@ -88,16 +88,16 @@ article{
     /*border: 1px solid blue;*/
 }
 /* gallery elements*/
-.gallery{
+figure{
 	border: 1px solid #ccc;
 	width: 180px;
 	display: inline-block;
 }
-.gallery img{
+figure img{
 	width: 100%;
 	height: 100px;
 }
-.gallery figcaption{
+figure figcaption{
 	/*padding: top right bottom left*/
 	padding: 10px 0 10px 0;
 	text-align: center;
