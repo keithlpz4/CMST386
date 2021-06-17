@@ -1,0 +1,143 @@
+@import '_config';
+@import 'dropdown-menus';
+//universal elements
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: auto;
+}
+html,body{
+    height: 100%;
+    background-color: $primary-color;
+    font-family: $default-fonts;
+}
+.wrapper{
+    display: block;
+    width: auto;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 15px;
+}
+a {
+    text-decoration: none;
+    color:black;
+    &:hover{
+        color: $highlight-color;
+    }
+}
+//body elements
+header{
+    display: block;
+    background-color: $secondary-color;
+    padding: 20px;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        //overflow: hidden;
+        #webtitle{
+            float:left;
+            text-decoration: none;
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            a:hover{
+                color: $highlight-color;
+            }
+        }
+        
+    }
+}
+.wrapper {
+    border: 1px solid purple;
+	/*top right bottom left*/
+	margin: 0 60px 0 60px;
+	width: auto;
+}
+.container{
+    position: relative;
+    min-height: fit-content;
+    display: flex;
+    background-color: inherit;
+}
+.home-image{
+    border: 1px solid greenyellow;
+    position: relative;
+    text-align: center;
+    color: white;
+    img{
+        width: 100%;
+        filter: brightness(80%);
+    }
+}
+.home-image-text{
+    //center text on picture
+    border: 1px solid blue;
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    font-size: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    #searchbar{
+        position: center;
+    }
+}
+section{
+    float:left;
+    width: 70%;
+    background-color: inherit;
+    padding: 20px;
+    h2{
+        text-align: center;
+    }
+}
+article{
+    width: 100%;
+    padding: 20px;
+    h3{
+        text-align: center;
+        padding: 10px;
+    }
+}
+aside{
+    float: left;
+    width: 30%;
+    background-color: #ddd;
+    padding: 20px;
+    nav{
+        ul{
+            li{
+                display: block;
+            }
+         }
+    }
+}
+footer{
+    background-color: $secondary-color;
+    padding: 10px;
+    text-align: center;
+    ul{
+        display: inline-block;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+        border-right: 1px solid black;
+        &:last-child{
+            border-right: none;
+        }
+        a:hover{
+            color: $highlight-color;
+        }
+    }
+}
+@import '_media';

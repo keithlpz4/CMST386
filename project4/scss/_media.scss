@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px) {
+    
+    nav {
+        overflow: hidden;
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 14px;
+    }
+    //breakpoint
+    article, aside{
+        width: 100%;
+    }
+}
