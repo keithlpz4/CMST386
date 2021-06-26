@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!--SEO reqs: keywords, descriptions-->
+    <meta charset="UTF-8">
+    <meta name="description" content="CMST386 6380 project 3 css preprocessors">
+    <meta name="keywords"
+        content="LESS, SASS, CSS preprocessors, mixins, variables, operators, functions, implmenting preprocessors">
+    <meta name="author" content="Keith Lopez">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CSS Preprocessors</title>
+</head>
+
+<body>
+    <!--SEO reqs. 1 h1 tag in each page -->
+    <header>
+        <h1 id="top">CMST 386: Project 3: CSS Preprocessors</h1>
+    </header>
+    <div class="hamnav">
+        <a href="../index.html">Home</a>
+        <div id="hamitems">
+            <a href="project3.html">Project 3</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
+    <main>
+        <section>
+            <h2>CSS Preprocessors</h2>
+            <article>
+                <h3>Ways to implement preprocessing (client-side vs. server-side)</h3>
+                <ul>
+                    <li>Server side – download and install node.js and the LESS package on the server afterwards utilizing the NPM you can compile the LESS file(s) into CSS file.</li>
+                    <li>Client side- Link the LESS file in the head of html as it were a .css file but must also provide the client access to a .js script that allows the client to compile the LESS file into CSS.</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Preprocessing mechanisms of LESS and SASS</h3>
+                <p> SASS and LESS are dynamic preprocessors that complie into CSS code. These
+                    preprocessor allow developers to write less CSS code by utilizing various mechanisms like a
+                    programming language like JavaScript. These mechanisms include:</p>
+                <div class="flex-container">
+                    <div>
+                    <b>Variables</b> – Like JavaScript, LESS utilize variables to store commonly used values. This
+                        allows
+                        the developer to call down the value in various CSS elements and change them all from a center
+                        location. This makes updating CSS scripts easier if several elements need to change.
+                    </div>
+                    <div>
+                        <b>Nested Variables</b> – this feature allows developers to structure CSS elements in the same
+                        visual
+                        hierarchy as HTML to lessen the amount of code repletion in CSS and better organize code.
+                    </div>
+                    <div>
+                        <b>Mixins</b> – Mixins – this a feature that allows developers to list several CSS elements as variables. This allows developers to pass these attributes into other CSS elements to look similar. For instance, if you have multiple article with the same padding or color attributes then you could insert the insert the mixin into those elements without having to re-write the same code again. 
+                    </div>
+                    <div>
+                        <b>Operators</b> – LESS also allows the use of arithmetical operations on variables. This will
+                        allow
+                        LESS to manipulate increase or decrease individual elements like color or text size without
+                        having to alter the called variable.
+                    </div>
+                    <div>
+                        <b>Functions</b> – used to create more complex relationships between CSS properties. This
+                        feature
+                        allows the use of logical, string, math, and other misc. functions, making the creation of
+                        dynamic html code significantly easier. 
+                    </div>
+                </ul>
+                </div>
+                <h3>Source</h3>
+            </article>
+        </section>
+        <hr>
+        <ul class="breadcrumb">
+            <li><a href="..\index.html">Home</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+            <li>CSS Preprocessing</li>
+        </ul>
+        <p style="text-align: center;">Back to <a href="#top">Top</a></p>
+    </main>
+    <footer>
+        <p>2021 &copy; Keith Lopez</p>
+    </footer>
+</body>
+<script src="js/hamburger.js"></script>
+</html>

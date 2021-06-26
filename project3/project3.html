@@ -1,1 +1,103 @@
-project 3
+<!DOCTYPE html>
+<html lang='en'>
+<!--I implement SASS via a VScode extension called Live Sass Compiler by Ritwek Dey. The extension allowed me to create a SASS subfolder within my project and watch the .SCSS file to automatically build and update my .CSS file instantly see changes implemented in my HTML file. i took advantage of SASS nested capabilities to reduce the amount of repeated code i was creating.-->
+<head>
+    <!--SEO reqs: keywords, descriptions-->
+    <meta charset="UTF-8">
+    <meta name="description" content="CMST386 6380 project 3">
+    <meta name="keywords"
+        content="Responsive design, google analytics, audience reports, behavior flow reports, acquision reports">
+    <meta name="author" content="Keith Lopez">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CMST386 Project 3</title>
+</head>
+
+<body>
+    <!--SEO reqs. 1 h1 tag in each page -->
+    <header>
+        <h1>CMST 386: Project 3</h1>
+    </header>
+    <div class="hamnav">
+        <a href="../index.html">Home</a>
+        <div id="hamitems">
+            <a href="project3.html">Project 3</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <!-- <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="../project1/project1.html" class="dropbtn">Project 1</a>
+                <div class="dropdown-content"><a href="../project1/gallery.html">Gallery</a></div>
+            </li>
+            <li class="dropdown">
+                <a href=project3.html class="dropbtn">Project 3</a>
+                <div class="dropdown-content"><a href=preprocessing.html>Preprocessing</a></div>
+            </li>
+        </ul> -->
+    </div>
+    <main>
+        <section>
+            <h2>Responsive Design and Website Analytics</h2>
+            <article>
+                <h3>Importance of Responsive Design</h3>
+                <p>There is no guarantee how a user will access and view a website, it be for personal accessibility
+                    setting or the restrictions of a device. Responsive design allows web developers the ability to
+                    control they users view content by enabling developers to adapt the web site to account for these
+                    personal settings. For example, the navigation bar can be collapsed, hidden, and set completely as a
+                    drop menu to allow mobile cellphone users ability to read content easier as they do not have the
+                    access to 24” monitor.</p>
+                <h3>Source</h3>
+                <p>Almeida, F., & Monteiro, J.A. (2017). The Role of Responsive Design in Web Development. Webology, 14.
+                </p>
+            </article>
+            <article>
+                <h3>Google Analytics: 3 different types of reports</h3>
+                <p>Data analytics have become a big part of the internet as it allows companies and website owners the
+                    ability to see if their websites are doing well and how. Google Analytics is a tool that offers data
+                    capture tools such as:
+                <ul>
+                    <li>Audience Report grants developers to determine the level user enthusiasm of a site or app by
+                        tracking active users, understand the age-and-gender of their audiences and track where the
+                        language
+                        and region the web traffic is coming from. This allows the site owner to tailor and market their
+                        content appropriately (Advertising reports - Analytics Help).</li>
+                    <li>Behavior Flow Reports allows developers to track how users move around your website. This report
+                        allows developers to discover what content keeps users engaged, see users navigate thru the
+                        content
+                        as expected and how various marketing channels are sending traffic to the website (About the
+                        flow
+                        visualization reports - Analytics Help).</li>
+                    <li>Acquisition report Reports are reports that show web owners which sources send the highest
+                        quality
+                        traffic and conversions (Google Analytics, 2017). This shows how the user visited your site by
+                        capturing the medium, source and market campaign. This allows developers to understand which
+                        marketing technique is most effective in getting users to visit their site.</li>
+                </ul>
+                </p>
+                <h3>Source</h3>
+                <p>Google. (n.d.). Advertising reports - Analytics Help. Google. <a
+                        href="https://support.google.com/analytics/topic/1631776?hl=en&amp;ref_topic=3544907&amp;utm_source=marketingplatform.google.com&amp;utm_medium=et&amp;utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2Ffeatures.">https://support.google.com/analytics/topic/1631776?hl=en&amp;ref_topic=3544907&amp;utm_source=marketingplatform.google.com&amp;utm_medium=et&amp;utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2Ffeatures.</a>
+                </p>
+                <p>Google. (n.d.). About the flow visualization reports - Analytics Help. Google. <a
+                        href="https://support.google.com/analytics/answer/2519986?utm_source=marketingplatform.google.com&amp;utm_medium=et&amp;utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2Ffeatures#zippy=%2Cin-this-article.">https://support.google.com/analytics/answer/2519986?utm_source=marketingplatform.google.com&amp;utm_medium=et&amp;utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2Ffeatures#zippy=%2Cin-this-article.</a>
+                </p>
+                <p>Google Analytics. (2017, June 9). Acquisition reports overview (5:32) [Video]. YouTube. <a
+                        href="https://www.youtube.com/watch?v=ywqDRj9nEjQ">https://www.youtube.com/watch?v=ywqDRj9nEjQ</a>
+                </p>
+            </article>
+            <a class="callToaction" href="preprocessing.html">Learn Preprocessing</a>
+            <br><hr>
+            <ul class="breadcrumb">
+                <li><a href="..\index.html">Home</a></li>
+                <li>Project 3</li>
+            </ul>            
+        </section>
+    </main>
+    <footer>
+        <p>2021 &copy; Keith Lopez</p>
+    </footer>
+</body>
+<script src="js/hamburger.js"></script>
+</html>
