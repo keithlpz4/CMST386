@@ -1,0 +1,15 @@
+@mixin searchfields{
+    .search-container button {
+        padding: 6px 10px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+    input[type=text] {
+        padding: 14px 16px;
+        margin: 14px;
+        // font-size: 17px;
+        border: none;
+  }
+}

@@ -7,55 +7,70 @@
     <meta name="keywords"
         content="native american languages, native american history, native american indian languages, native american indian history">
     <meta name="author" content="Keith Lopez">
+    <meta name="copyright" content="Native Languages of the Americas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" languages="javascript" src="js/dropdown-onclick.js"></script>
-    <!--<script type="text/javascript" language="javascript" src="js/dropdown.js"></script>-->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2db7a48b3a.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Native-Languages</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1><a id="webtitle" href="project4.html">Native-Languages.org</a></h1>
-            <ul>
-                <li class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Language Families <i class = "fa fa-caret-down"></i></button>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="language-families.html">Language Families</a>
-                        <a href="#">Tribes</a>
-                        <a href="#">Culture</a>
-                        <a href="#">Dictionaries</a>
-                    </div>
-                </li>
-                <li><a href="#">Support Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="home-image">
-            <img src="imgs/bkheroimage.jpg" alt="native-american vector home-image">
-            <div class="home-image-text">
-                <p>Welcome to Native Languages of the Americas! We are a small non-profit organization dedicated to the survival of
-                    Native American languages, particularly through the use of Internet technology. Our website is not beautiful.
-                    Probably, it never will be. But this site has inner beauty, for it is, or will be, a compendium of online
-                    materials about more than 800 indigenous languages of the Western Hemisphere and the people that speak them.
-                </p>
-                <form id="searchbar"><input type="search" id="query" name="q" placeholder="Search..."><button>Search</button></button>
+    <div class="hamnav">
+        <h1 id="toppage"><a href="project4.html">Native-Languages.org</a></h1>
+        <div id="hamitems">
+            <a href="language-families.html">Language Families</a>
+            <a href="cultures.html">Cultures</a>
+            <a href="submissions.html">Submit your Writings</a>
+            <a href="supportus.html">Support Us</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1>Welcome to Native Languages of the Americas!</h1>
+          <br>
+          <p>We are a small non-profit organization dedicated to the survival of
+            Native American languages, particularly through the use of Internet technology. Our website is not beautiful.
+            Probably, it never will be. But this site has inner beauty, for it is, or will be, a compendium of online
+            materials about more than 800 indigenous languages of the Western Hemisphere and the people that speak them.</p>
+            <br>
+            <div class="search-container">
+                <form id="searchbar"><input type="search" id="query" name="q" placeholder="Search..."><button><i class="fa fa-fw fa-search"></i></button></button>
                 </form>
             </div>
         </div>
-    </div>
+      </div>
     <footer>
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">FAQS</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Support Us</a></li>
-        </ul>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+            <br>
         <p>Native Languages of the Americas website &copy; 1998-2021</p>
+        <br>
+        <p><i class="fas fa-clock"></i> Date & Time - <span id="showTimeDate"></span></p>
     </footer>
+    <script src="js/hamburger.js"></script>
+<script src="js/dataandtime.js"></script>
 </body>
 
 </html>
